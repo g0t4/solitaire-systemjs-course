@@ -62,7 +62,7 @@ input 'Deploy to staging?'
 // limit concurrency so we don't perform simultaneous deploys
 // and if multiple pipelines are executing, 
 // newest is only that will be allowed through, rest will be canceled
-stage name: 'Deploy', concurrency: 1
+stage name: 'Deploy to staging', concurrency: 1
 node {
     // write build number to index page so we can see this update
     sh "echo '<h1>${env.BUILD_DISPLAY_NAME}</h1>' >> app/index.html"
