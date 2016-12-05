@@ -28,7 +28,7 @@ node {
 }
 
 // demoing a second agent
-node('mac') {
+node('windows') {
     // on windows use: bat 'dir'
     sh 'ls'
 
