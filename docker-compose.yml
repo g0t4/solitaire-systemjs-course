@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  solitaire:
+    build: .
+    ports:
+      - 3000:80
