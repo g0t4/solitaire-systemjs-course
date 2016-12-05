@@ -70,7 +70,7 @@ node {
     notify("Deploy to staging?")
 }
 
-input 'Deploy to staging?'
+input 'Deploy to staging, are you sure ?'
 
 // limit concurrency so we don't perform simultaneous deploys
 // and if multiple pipelines are executing, 
