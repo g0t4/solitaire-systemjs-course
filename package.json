@@ -15,7 +15,9 @@
     "karma-chrome-launcher": "^0.2.0",
     "karma-firefox-launcher": "^0.1.6",
     "karma-jasmine": "^0.3.6",
-    "karma-junit-reporter": "^0.3.4"
+    "karma-junit-reporter": "^0.3.8",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "karma-safari-launcher": "^1.0.0"
   },
   "scripts": {
     "postinstall": "node node_modules/bower/bin/bower install",
@@ -23,6 +25,7 @@
     "start": "http-server -c-1 -o",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
-    "test-single-run": "karma start karma.conf.js --single-run"
+    "test-single-run": "karma start karma.conf.js --single-run",
+    "test-chrome": "karma start karma.conf.js --single-run --browsers Chrome"
   }
 }

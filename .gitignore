@@ -4,6 +4,7 @@ node_modules/
 bower_components/
 tmp
 .DS_Store
+test-results/
 
 ## Directory-based project format:
 .idea/
