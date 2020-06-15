@@ -12,10 +12,7 @@ node{
             //    url: "${git_repository}"
         }
         stage('dependencies, stash, testing') {
-            git branch: 'jenkins2-course',
-                credentialsId: "${credentials}",
-                url: "${git_repository}"
-
+        
             // pull dependencies from npm
             // on windows use: bat 'npm install'
             sh 'npm install'
