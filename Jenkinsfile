@@ -1,4 +1,6 @@
 node{
+checkout SCM
+
     def project_path = "spring-boot-samples/spring-boot-sample-atmosphere/"
     def git_repository = "https://github.com/moussena1992/solitaire-systemjs-course.git"
     def credentials = "f57bfdcf-f995-4cd5-b26b-ff0ca8504fbe"
@@ -6,13 +8,13 @@ node{
     notify("started")
     try{
         stage('checkout') {
-            checkout SCM
+            // checkout SCM
             // git branch: 'jenkins2-course',
             //    credentialsId: "${credentials}",
             //    url: "${git_repository}"
         }
         stage('dependencies, stash, testing') {
-        
+
             // pull dependencies from npm
             // on windows use: bat 'npm install'
             sh 'npm install'
