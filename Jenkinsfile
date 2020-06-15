@@ -7,12 +7,6 @@ checkout scm
 
     notify("started")
     try{
-        stage('checkout') {
-            // checkout SCM
-            // git branch: 'jenkins2-course',
-            //    credentialsId: "${credentials}",
-            //    url: "${git_repository}"
-        }
         stage('dependencies, stash, testing') {
 
             // pull dependencies from npm
