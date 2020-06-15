@@ -1,5 +1,5 @@
 node{
-checkout SCM
+checkout scm
 
     def project_path = "spring-boot-samples/spring-boot-sample-atmosphere/"
     def git_repository = "https://github.com/moussena1992/solitaire-systemjs-course.git"
